@@ -1,0 +1,15 @@
+---
+resources:
+- name: concourse-android
+  type: git
+  source:
+    uri: https://github.com/jbrunton/concourse-android.git
+    branch: master
+
+jobs:
+- name: unit_tests
+  plan:
+    - get: concourse-android
+      trigger: true
+    - task: unit_tests
+      file: concourse/tasks/unit_tests/task.yml

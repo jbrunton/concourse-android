@@ -1,0 +1,7 @@
+---
+platform: linux
+image: docker:///jacekmarchwicki/android
+inputs:
+- name: concourse-android
+run:
+  path: concourse/tasks/unit_tests/run.sh
