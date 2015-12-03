@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "STARTING TEST"
-#cd cheetah
+cd ../../../
 #export GRADLE_OPTS='-Dorg.gradle.native=false'
-gradle -d test
+./gradlew -d test
 echo "FINISHED TESTING"
