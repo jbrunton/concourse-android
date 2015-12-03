@@ -12,4 +12,4 @@ jobs:
     - get: concourse-android
       trigger: true
     - task: unit_tests
-      file: concourse/tasks/unit_tests/task.yml
+      file: concourse-android/concourse/tasks/unit_tests/task.yml
